@@ -4,9 +4,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.mycompany</groupId>
-	<artifactId>gon-munit-tests</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<groupId>fc9e3283-a489-4e88-99aa-cceea4aa5ea1</groupId>
+	<artifactId>mule-examples-munit</artifactId>
+	<version>1.0.0</version>
 	<packaging>mule-application</packaging>
 
 	<name>mule-examples-munit</name>
