@@ -82,8 +82,8 @@
 					</execution>
 				</executions>
 				<configuration>
+					<runtimeProduct>MULE_EE</runtimeProduct>
 					<redirectTestOutputToFile>true</redirectTestOutputToFile>
-					<testOutputDirectory>/Users/gonzalo.marcos/AnypointStudio/munit-course/gon-munit-tests/gon-reports</testOutputDirectory>
 					<coverage>
 						<runCoverage>true</runCoverage>
 						<failBuild>false</failBuild>
@@ -163,14 +163,14 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
-	
+
 	<distributionManagement>
-        <repository>
-            <id>anypoint-exchange-v3</id>
-            <name>Corporate Repository</name>
-            <url>https://maven.anypoint.mulesoft.com/api/v3/organizations/${env.MULE_BG_ID}/maven</url>
-            <layout>default</layout>
-        </repository>
-    </distributionManagement>
+		<repository>
+			<id>anypoint-exchange-v3</id>
+			<name>Corporate Repository</name>
+			<url>https://maven.anypoint.mulesoft.com/api/v3/organizations/${env.MULE_BG_ID}/maven</url>
+			<layout>default</layout>
+		</repository>
+	</distributionManagement>
 
 </project>
