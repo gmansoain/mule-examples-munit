@@ -29,7 +29,7 @@ jobs:
         env:
           MULE_CLIENT_ID: ${{ secrets.MULE_CLIENT_ID }}
           MULE_CLIENT_SECRET: ${{ secrets.MULE_CLIENT_SECRET }}
-          MULE_ORG_ID: ${{ secrets.MULE_ORG_ID }}
+          MULE_BG_ID: ${{ secrets.MULE_BG_ID }}
         run: mvn clean -B deploy -s .maven/settings.xml
   
       - name: Stamp artifact file name with commit hash
