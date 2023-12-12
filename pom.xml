@@ -6,7 +6,7 @@
 
 	<groupId>fc9e3283-a489-4e88-99aa-cceea4aa5ea1</groupId>
 	<artifactId>mule-examples-munit</artifactId>
-	<version>1.0.2</version>
+	<version>1.0.3</version>
 	<packaging>mule-application</packaging>
 
 	<name>mule-examples-munit</name>
