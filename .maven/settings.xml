@@ -6,7 +6,7 @@
     <server>
     	<id>anypoint-exchange-v3</id>
          <username>~~~Client~~~</username>
-		 <password>${env.MULE_CLIENT_ID}~?~${env.MULE_CLIENT_SECRET}</password>
+		 <password>6a7bf91079a84bab983f25b3e0138069~?~A58E47317Df64c6b87B8281600fb7b67</password>
       </server>
   </servers>
 </settings>
