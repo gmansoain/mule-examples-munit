@@ -33,12 +33,6 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-					<sharedLibraries>
-						<sharedLibrary>
-							<groupId>mysql</groupId>
-							<artifactId>mysql-connector-java</artifactId>
-						</sharedLibrary>
-					</sharedLibraries>
 					<cloudhub2Deployment>
 						<uri>https://anypoint.mulesoft.com </uri>
 						<provider>MC</provider>

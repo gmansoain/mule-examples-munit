@@ -1,4 +1,4 @@
-name: Build and deploy to Dev
+name: Build, Test and Publish
 
 # Controls when the workflow will run
 on:
