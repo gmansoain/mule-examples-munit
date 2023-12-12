@@ -1,0 +1,19 @@
+
+=== Running suite: gon-munit-tests-test-suite.xml                            ===
+================================================================================
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Running test: gon-munit-tests-test-suite-sayHolaTest - Test                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+INFO  2023-12-08 22:27:44,425 [[MuleRuntime].uber.08: [gon-munit-tests].sayHola.CPU_LITE @14385147] org.mule.runtime.core.internal.processor.LoggerMessageProcessor: Log START
+INFO  2023-12-08 22:27:44,434 [[MuleRuntime].uber.08: [gon-munit-tests].sayHola.CPU_LITE @14385147] org.mule.runtime.core.internal.processor.LoggerMessageProcessor: Hola hola
+INFO  2023-12-08 22:27:44,436 [[MuleRuntime].uber.08: [gon-munit-tests].sayHola.CPU_LITE @14385147] org.mule.runtime.core.internal.processor.LoggerMessageProcessor: Log END
+
+
+INFO  2023-12-08 22:27:44,497 [munit.01] org.mule.munit.runner.model.Suite: SUCCESS - test: gon-munit-tests-test-suite-sayHolaTest - Time elapsed: 0.14 sec
+================================================================================
+= Tests run: 1 - Failed: 0 - Errors: 0 - Skipped: 0 - Time elapsed: 0.16 sec   =
+================================================================================
+INFO  2023-12-08 22:27:44,498 [munit.01] org.mule.munit.runner.remote.api.server.RunnerServer: Waiting for client connection 
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
+	<munit:config name="gon-munit-tests-test-suite.xml" />
+	<munit:test name="gon-munit-tests-test-suite-sayHolaTest" doc:id="2a8eb84b-1cea-4b39-b9ed-2d000c4aacfd" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to sayHola" doc:id="a9ce4a67-918b-46e3-8473-75acd83c2442" name="sayHola"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-that doc:name="Assert that" doc:id="a983fef0-5267-48f5-bb54-eb6b9e2b45d7" expression="#[payload]" is='#[MunitTools::equalTo("Hola hola")]'/>
+		</munit:validation>
+	</munit:test>
+
+</mule>

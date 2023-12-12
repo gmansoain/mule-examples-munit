@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<flow name="sayHola" doc:id="653ecc2c-0552-42aa-b777-d1fbe2a52f94" >
+		<http:listener doc:name="GET /hola" doc:id="7a6f4903-381d-4d07-976a-58de8d689e0d" config-ref="HTTP_Listener_config" path="/hola" allowedMethods="GET"/>
+		<logger level="INFO" doc:name="Log START" doc:id="6a81fdf5-136e-4d33-bacb-02a1846ec3a9" message='#["Log START"]'/>
+		<set-payload value='#["Hola hola"]' doc:name="Set Payload" doc:id="22e0bff7-3dde-4b90-a9c2-52e0e01a141a" />
+		<logger level="INFO" doc:name="Log PAYLOAD" doc:id="e2a6afa4-3f83-4d6f-b3e5-4d499b6afc90" message="#[payload]"/>
+		<logger level="INFO" doc:name="Log END" doc:id="625dd5c1-fc99-4577-838f-6001c2ddc5cb" message='#["Log END"]'/>
+	</flow>
+</mule>
