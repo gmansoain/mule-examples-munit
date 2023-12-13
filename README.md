@@ -19,7 +19,7 @@ Here's what we need to include in this project to configure the MUnit maven plug
        - Resource
        - Flow
 
-```sh
+```xml
 <plugin>
   <groupId>com.mulesoft.munit.tools</groupId>
   <artifactId>munit-maven-plugin</artifactId>
@@ -57,7 +57,7 @@ Here's what we need to include in this project to configure the MUnit maven plug
 ## Maven settings.xml file
 In order to use Coverage for our MUnits it is required to use valid credentials for the Mule Nexus Enterprise Repo. Credentials are provided adding a server node to the settings.xml file
 In this project we use the placeholders NEXUX_USERNAME and NEXUS_PASSWORD. Values are provided as Secrets of this repo that will be used by the CI github actions workflow
-```
+```xml
 <server>
   <id>MuleRepository</id>
   <username>${env.NEXUS_USERNAME}</username>
@@ -66,6 +66,12 @@ In this project we use the placeholders NEXUX_USERNAME and NEXUS_PASSWORD. Value
 ```
 
 ## Useful Links
+- https://docs.mulesoft.com/munit/latest/munit-maven-plugin
+- [Set Up Coverage](https://docs.mulesoft.com/munit/latest/munit-maven-plugin#set-up-coverage)
+- [Run Tests Using the plugin](https://docs.mulesoft.com/munit/latest/munit-maven-plugin#run-tests-using-the-plugin)
+- [How to specify Mule Enterprise Version](https://docs.mulesoft.com/munit/latest/munit-maven-plugin#specify-runtime-product)
+- [MUnit Maven Plugin Configuration Reference](https://docs.mulesoft.com/munit/latest/munit-maven-plugin#munit-maven-plugin-configuration-reference)
+- [Setup Maven Settings file to use the Mule Enterprise Nexus Repo](https://help.mulesoft.com/s/article/How-to-use-Enterprise-Maven-Repository-credentials-with-settings-xml-and-pom-xml-example)
 
 
 ## Author
