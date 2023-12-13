@@ -96,6 +96,9 @@ In this project we use the placeholders NEXUX_USERNAME and NEXUS_PASSWORD. Value
 </server>
 ```
 
+## Continuous Integration Workflow
+
+
 ## Useful Links
 MuleSoft Docs:
 - https://docs.mulesoft.com/munit/latest/munit-maven-plugin
