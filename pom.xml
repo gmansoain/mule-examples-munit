@@ -83,7 +83,6 @@
 				</executions>
 				<configuration>
 					<runtimeProduct>MULE_EE</runtimeProduct>
-					<redirectTestOutputToFile>true</redirectTestOutputToFile>
 					<coverage>
 						<runCoverage>true</runCoverage>
 						<failBuild>false</failBuild>

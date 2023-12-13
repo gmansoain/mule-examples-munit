@@ -28,6 +28,12 @@ jobs:
           NEXUS_PASSWORD: ${{ secrets.NEXUS_PASSWORD }}
         run: mvn test --settings .maven/settings.xml
         
+      - name: Upload MUnit reports
+        uses: actions/upload-artifact@v3
+        with:
+          name: munit-test-reports
+          path: target/site/munit/coverage/
+        
 
   build:
     needs: test
